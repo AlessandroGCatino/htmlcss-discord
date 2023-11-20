@@ -21,6 +21,10 @@ a{
     text-decoration: none;
 }
 
+button{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
 /* formattazione header */
 header{
     display: flex;
@@ -46,10 +50,7 @@ nav.menu-header ul li{
     text-align: center;
 }
 
-button{
-    padding: 10px;
-    border-radius: 15px;
-}
+
 header button{
     border: white;
 }
@@ -87,8 +88,6 @@ header button{
     margin-bottom: 50px;
 }
 
-
-
 .download :first-child{
     background-color:white;
     border-color: white;
@@ -112,14 +111,13 @@ main{
 main>
 div.dettagli{
     display: flex;
-    width: 80%;
+    padding: 5% 10%;
     align-items: center;
 }
 .dettagli figure{
     width: 72%;
     height: 100%;
     overflow: hidden;
-    padding-block: 5%;
     text-align: center;
 }
 .dettagli figure img{
@@ -141,65 +139,82 @@ div.dettagli{
     width: 90%;
 }
 
-.dettagli div h2{
-    max-height: 60%;
+.dispari{
+    background-color: #f6f6f6;
 }
 
-.dispari{
-    flex-direction: row-reverse;
+.dispari>div{
+    order: -1;
 }
+
 .large{
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
-    gap: var(--myGap);
-}
-.large figure{
-    height: 60%;
-}
-.large h2,
-.large p,
-.large h3{
-    height: 8%;
-    width: 65%;
     text-align: center;
-    background-color: aqua;
 }
+
+.large figure{
+    width: 100%;
+}
+.large figure img{
+    width: 100%;
+}
+
+.dettagli h3{
+    padding: 25px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .dettagli button{
-    width: 20%;
-    height: 5%;
-    background-color: coral;
+    background-color: #8ea1e1;
+    border: white;
+    color: white;
 }
 
 /* formattazione footer */
 
-footer .footer-links{
+footer{
+    padding-inline: 10%;
     background-color: var(--footerBgColor);
-    height: 400px;
+
+}
+
+footer .footer-links{
     display: flex;
-    padding: 1%;
-    justify-content: space-evenly;
+    padding: 5%;
+    color: white;
+
+}
+
+.footer-links> :first-child{
+    flex-grow: 2;
+}
+
+li h3{
+    font-size: 25px;
+    width: 60%;
+}
+
+ul.col>li:first-child,
+hr{
+    color: #6e84d2;
+    border-color: #6e84d2;
+}
+
+li img{
+    height: 14px;
 }
 
 .social{
-    background-color: aquamarine;
-    height: 100%;
-    width: 30%;
-}
-
-.menu-footer{
-    width: 65%;
     display: flex;
-    justify-content: space-evenly;
-    gap: var(--myGap);
+    gap: 15px;
 }
 
-.footer-col{
-    width: calc(100%/4);
-    background-color: silver;
-}
-
-hr{
-    color: white;
+.link-col{
+    flex-grow: 1;
 }
 
 .piedipagina{
@@ -207,11 +222,4 @@ hr{
     justify-content: space-between;
     background-color: var(--footerBgColor);
     padding: 3%;
-}
-
-.piedipagina figure,
-.piedipagina>button{
-    width: 100px;
-    height: 50px;
-    background-color: var(--internalItems);
 }
