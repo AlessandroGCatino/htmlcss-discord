@@ -110,13 +110,13 @@ main{
 
 main>
 div.dettagli{
+    width: 100%;
     display: flex;
     padding: 5% 10%;
     align-items: center;
 }
 .dettagli figure{
     width: 72%;
-    height: 100%;
     overflow: hidden;
     text-align: center;
 }
@@ -155,7 +155,7 @@ div.dettagli{
 }
 
 .large figure{
-    width: 100%;
+    width: 70%;
 }
 .large figure img{
     width: 100%;
@@ -186,6 +186,7 @@ footer .footer-links{
     display: flex;
     padding: 5%;
     color: white;
+    gap: 10px;
 
 }
 
@@ -196,7 +197,9 @@ footer .footer-links{
 li h3{
     font-size: 25px;
     width: 60%;
+    margin-bottom: 15px;
 }
+
 
 ul.col>li:first-child,
 hr{
@@ -222,4 +225,10 @@ li img{
     justify-content: space-between;
     background-color: var(--footerBgColor);
     padding: 3%;
+}
+
+.piedipagina button{
+    background-color: #8ea1e1;
+    border: none;
+    color: white;
 }
