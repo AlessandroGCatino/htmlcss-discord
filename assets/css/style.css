@@ -26,13 +26,26 @@ button{
     border-radius: 20px;
 }
 /* formattazione header */
+
 header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: var(--myGap);
-    padding:2% 8%;
-    background-color: var(--headerBgColor);
+    gap: 50px;
+    padding: 1% 8%;
+    font-size: 12px;
+}
+
+header img{
+    display: block;
 }
 
 nav.menu-header ul{
@@ -55,21 +68,17 @@ header button{
     border: white;
 }
 
-
-/* formattazione introduzione e download */
-
 .introduction{
     width: 100%;
     color:white;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    gap: 50px;
+
+
 }
 
 .introduction h1{
@@ -81,7 +90,7 @@ header button{
     width: 40%;
     font-size: small;
 }
-.download{
+.introduction .download{
     display: flex;
     justify-content:space-around;
     gap: var(--myGap);
@@ -98,11 +107,11 @@ header button{
     background-color:#202326;
 }
 
+
 /* formattazione contenuto principale */
 
 main{
     display: flex;
-    gap: var(--myGap);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -231,4 +240,21 @@ li img{
     background-color: #8ea1e1;
     border: none;
     color: white;
+}
+
+
+.wave{
+    /* background-image: url(../img/wave.svg); */
+    width: 100%;
+    height: 50px;
+}
+
+/* css per bonus */
+
+.wave-bianca{
+    background-color: #f6f6f6;
+}
+
+.wave-grigia{
+    background-color: white;
 }
