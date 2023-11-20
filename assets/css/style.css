@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root{
+    --myGap: 10px;
+    --internalItems: white;
+    --headerBgColor: #3161e0;
+    --introductionElem: coral;
+    --footerBgColor: #23272a;
+}
+
+/* formattazione header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--myGap);
+    padding-block: 1%;
+    background-color: var(--headerBgColor);
+}
+
+nav.menu-header ul li,
+header>button,
+header figure,
+.piedipagina figure,
+.piedipagina>button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--internalItems);
+}
+
+nav.menu-header ul{
+    display: flex;
+    gap: var(--myGap);
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1%;
+    text-transform: capitalize;
+}
+
+/* formattazione introduzione e download */
+
+.introduction{
+    color:white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--myGap);
+    /* qui andrebbe l'immagine di sfondo */
+    background-color: var(--headerBgColor);
+}
+.introduction h2,
+.introduction p{
+    background-color: var(--introductionElem);
+}
+.introduction h2{
+    width: 200px;
+    height: 50px;
+}
+.introduction p{
+    width: 350px;
+    height: 100px;
+}
+.download{
+    display: flex;
+    width: 350px;
+    justify-content:space-around;
+    height: 50px;
+    gap: var(--myGap);
+}
+.download button{
+    width: 40%;
+}
+.download :first-child{
+    background-color:seagreen;
+}
+
+.download :last-child{
+    background-color:rosybrown;
+}
+
+/* formattazione contenuto principale */
+
+main{
+    display: flex;
+    gap: var(--myGap);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main>
+div.dettagli{
+    display: flex;
+    height: 500px;
+    width: 80%;
+    align-items: center;
+}
+.dettagli figure{
+    width: 65%;
+    height: 100%;
+    background-color: pink;
+}
+.dettagli div{
+    width: 35%;
+    height: 80%;
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--myGap);
+}
+.dettagli div h2,
+.dettagli div p{
+    height: 40%;
+    width: 80%;
+    background-color: var(--internalItems);
+}
+.dispari{
+    flex-direction: row-reverse;
+}
+.large{
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--myGap);
+}
+.large figure{
+    height: 60%;
+}
+.large h2,
+.large p,
+.large h3{
+    height: 8%;
+    width: 65%;
+    text-align: center;
+    background-color: aqua;
+}
+.dettagli button{
+    width: 20%;
+    height: 5%;
+    background-color: coral;
+}
+
+/* formattazione footer */
+
+footer .footer-links{
+    background-color: var(--footerBgColor);
+    height: 400px;
+    display: flex;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
+.social{
+    background-color: aquamarine;
+    height: 100%;
+    width: 30%;
+}
+
+.menu-footer{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--myGap);
+}
+
+.footer-col{
+    width: calc(100%/4);
+    background-color: silver;
+}
+
+hr{
+    color: white;
+}
+
+.piedipagina{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footerBgColor);
+    padding: 3%;
+}
