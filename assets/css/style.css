@@ -252,6 +252,11 @@ li img{
 
 /* css per bonus */
 
+svg{
+    width: 100%;
+    display: block;
+}
+
 .wave-bianca{
     background-color: #f6f6f6;
 }
