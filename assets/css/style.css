@@ -33,6 +33,7 @@ header{
     gap: 50px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .container{
